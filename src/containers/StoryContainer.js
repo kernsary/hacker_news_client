@@ -34,7 +34,7 @@ class StoryContainer extends React.Component {
       let storySearch = event.target.value;
       const matchingStories = [];
       for(let story of this.state.stories){
-        if(story.title.includes(storySearch)){
+        if(story.title.toLowerCase().includes(storySearch)){
           matchingStories.push(story);
         }
       }

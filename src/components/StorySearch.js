@@ -9,7 +9,7 @@ const StorySearch = (props) => {
     <input
     type="text"
     placeholder="Search for story"
-    onKeyUp={props.handleInput}/>
+    onChange={props.handleInput}/>
     </form>
 
   )
